@@ -10,6 +10,9 @@
 /* carrer obejective */
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 
+/* business card */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
 .nav {
   font-family: 'Jost', sans-serif; 
    text-transform: uppercase;
@@ -83,7 +86,20 @@
   border-radius: 5%;
   padding: 4%;
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  animation: main 2s ease forwards;
+  animation-delay: 0.3s;
+
   
+}
+@keyframes main{
+  0%{
+      transform: translateX(-100px);
+      opacity: 0 ;
+  }
+  /* 80%{
+      transform: translateY(0);
+      opacity: 1;
+  } */
 }
 
 
@@ -234,7 +250,20 @@
 .coffee{
     display: inline-flex;
     justify-content: end;
+    flex-wrap: wrap;
     transform: translate(70%,55%);
+    /* animation: coffee 2s ease backwards;
+  animation-delay: 0.3s; */
+}
+@keyframes coffee{
+  0%{
+      transform: translateY(-100px);
+      opacity: 0;
+  }
+  /* 100%{
+      transform: translateY(0);
+      opacity: 1;
+  } */
 }
 
 .space_main{
@@ -243,62 +272,14 @@
 
 
 /* for about */
-  
-/* .btn-shine{
-  
-  color: #080808;
-  background: linear-gradient(to right, #e22019 0, rgb(65, 220, 231) 10%, #e22019 20%);
-  background-position: 0;
-  -webkit-background-clip: text;
-  text-align: center;
-  -webkit-text-fill-color: transparent;
-  animation: shine 4s infinite linear;
-  animation-fill-mode: forwards;
-  -webkit-text-size-adjust: none;
-  font-weight: 1000;
-  font-size: 60px;
-  text-decoration: none;
-  white-space: nowrap;
-}
-.shine{
-  text-align: center;
-}    
-
-@keyframes shine{
-  0%
-    {background-position: 0;}
-  
-  60%
-    {background-position: 250px;}
-  100%
-    {background-position: 180px;}
-  } */
-
-
-  @font-face {
-    font-family: 'Josefin Slab', serif;
-    
-  }
-  
-
-  
+   
   .sign {
    
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 50%;
-    height: 50%; */
-    /* background-image: radial-gradient(
-      ellipse 50% 35% at 50% 50%,
-      #6b1839,
-      transparent) */
-      ;
-    /* transform: translate(-50%, -50%); */
+  
     letter-spacing: 2;
-    /* left: 50%;
-    top: 50%; */
-        
     font-family: 'Josefin Slab', serif;
     text-transform: uppercase;
     font-size: 3em;
@@ -308,6 +289,8 @@
       0 -0.5rem 2rem #ff2424, 0 0.5rem 3rem #ff2424;
     animation: shine 2s forwards, flicker 3s infinite;
   }
+  
+  
   
   @keyframes blink {
     0%,
@@ -499,9 +482,7 @@
   justify-content: start;
 } */
 .outtime  {
-  display: flex;
-  
-  
+  display: flex; 
 }
 .timeline  {
   flex: 1;
@@ -590,4 +571,169 @@ backdrop-filter: blur(0px);
   }
 
 }
+
+/* projects */
+
+.space_mainpro{
+  height: 100px;
+}
+
+ 
+.projects {
+	 background-image: url(https://subtlepatterns.com/patterns/gplaypattern.png);
+	 background-position: center center;
+	 font-family: 'Open Sans', sans-serif;
+}
+
+.card1  {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1;
+
+  border: 2px;
+  justify-content: center;
+  align-items: center;
+}
+
+.card1.z {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border: 2px;
+}
+ .business-card {
+    
+	 height: 427px;
+	 width: 320px;
+	margin-top: 100px;
+	 margin-left: 200px;
+   margin-bottom: 200px;
+   margin-right: 200px;
+}
+ div.business-card:hover .flipper, div.business-card.hover .flipper {
+	 transform: rotateY(180deg) rotateZ(90deg);
+}
+ div.flipper {
+  
+	 transition: 0.7s;
+	 transform-style: preserve-3d;
+	 /* position: relative; */
+	 transform-origin: center 170px;
+}
+ div.front, div.back {
+	 backface-visibility: hidden;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 height: 427px;
+	 width: 320px;
+	 box-shadow: 0 0 50px rgba(0, 0, 0, 0.75);
+}
+ div.front {
+	 background-color: white;
+	 z-index: 0;
+}
+ div.front:before, div.front:after {
+	 display: block;
+	 content: '';
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 border-width: 160px;
+	 border-style: solid;
+	 border-color: transparent;
+}
+ div.front:before {
+	 border-top-color: #288fbd;
+	 border-left-color: #288fbd;
+	 z-index: 2;
+}
+ div.front:after {
+	 border-top-color: #005d8c;
+	 border-right-color: #005d8c;
+}
+ div.front div.name {
+	 position: absolute;
+	 bottom: 8.5px;
+	 left: 85px;
+}
+ div.front div.name span {
+	 display: block;
+	 font-size: 40px;
+	 line-height: 45px;
+}
+ div.front div.name span.first {
+	 color: #005d8c;
+}
+ div.front div.name span.last {
+	 color: #288fbd;
+}
+ div.front div.name span.title {
+	 font-size: 20px;
+	 line-height: 20px;
+}
+ div.back {
+	 background-color: #005d8c77;
+	 color: rgb(255, 255, 255);
+	 width: 427px;
+	 height: 320px;
+	 box-sizing: border-box;
+	 transform: rotateY(180deg) rotateZ(90deg);
+}
+ /* div.back div.container-sm {
+	 float: left;
+	 width: 40%;
+	 height: 100%;
+	 position: relative;
+} */
+ div.back div.container-lg {
+  font-family: 'Chakra Petch', sans-serif;
+  font-size: 20px;
+	 
+	 width: 90%;
+	 margin: 2rem;
+   
+}
+ /* div.back figure.logo-white {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 width: 120px;
+	 height: 120px;
+	 display: block;
+	 margin: -60px -60px;
+} */
+ /* div.back figure.logo-white:before, div.back figure.logo-white:after {
+	 display: block;
+	 content: '';
+	 position: absolute;
+	 border-style: solid;
+	 border-color: transparent;
+} */
+
+ /* div.back figure.logo-white:after {
+	 bottom: 0;
+	 right: 0;
+	 border-width: 56px;
+	 border-right-color: white;
+} */
+ div.back a {
+	 color: white;
+	 text-decoration: none;
+	 display: block;
+}
+ div.back a:hover {
+	 text-decoration: underline;
+}
+ div.back ul.social {
+	 font-size: 1.25rem;
+}
+ div.back ul.social li {
+	 margin-top: 1rem;
+}
+ div.back ul.social li:first-child {
+	 margin-top: 2rem;
+}
+ 
 
