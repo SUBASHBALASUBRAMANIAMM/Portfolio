@@ -577,7 +577,7 @@ backdrop-filter: blur(0px);
   height: 100px;
 }
 
-.container{
+ .container{
 
   position: relative;
 
@@ -617,6 +617,7 @@ backdrop-filter: blur(0px);
   25px 30px 30px rgba(0,0,0,0.05),
 
   inset -20px -20px 25px rgba(255,255,255,0.9);
+  animation: drop 2s infinite alternate ease-in-out;
 
 }
 
@@ -642,6 +643,15 @@ backdrop-filter: blur(0px);
 
   border-radius: 50%;
 
+}
+@keyframes drop {
+  from {
+    border-radius: 43% 72% 56% / 43% 53% 59%;
+  }
+
+  to {
+    border-radius: 45%;
+  }
 }
 
 .container .drop::before{
