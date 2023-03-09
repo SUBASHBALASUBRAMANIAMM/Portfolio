@@ -578,7 +578,7 @@ backdrop-filter: blur(0px);
 }
 
  .container{
-
+  font-family: 'Chakra Petch', sans-serif;
   position: relative;
 
   display: flex;
@@ -778,100 +778,85 @@ backdrop-filter: blur(0px);
 }
 
 /*  -----------------------skills */
-/* .totalcard{
-  display: flex;
-  justify-content: end;
-  margin-top: 5%;
-
-
-} */
-.outskill  {
-  display: flex; 
-  margin-top: 10%;
-}
-.cskill {
-  flex: 1;
-  border: 2px;
-  width: 50%;
-	padding: 1.5rem;
-}
-.cskill.pic{
+.outskill{
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.cards {
-	display: grid;
- 
-	grid-template-columns: repeat(auto-fit, minmax(10rem, 10fr));
-	grid-gap: 1.5rem;
-  
+.a-box {
+  display: inline-block;
+  width: 300px;
+  text-align: center;
 }
 
-.card {
-	background: #f5f0f0;
-	color: #242222;
-	padding: 1.5rem;
-	overflow: hidden;
-	border-radius: 0.8rem;
-  height: 90%;
+.a-box2 {
+  margin-left: 10%;
+  display: inline-block;
+  width: 300px;
+  text-align: center;
 }
-.card-title-large {
-	font-family: fantasy, sans-serif;
-	font-size: 2.5rem;
-	letter-spacing: 0.5rem;
-	color: #1d1d1d;
-    user-select: none;
-	transform: translateX(16rem);
-	transition: transform 2s;
-}
-.card-title-small {
-	margin-bottom: 1rem;
-}
-.card-description {
-	font-size: 1rem;
-	line-height: 1.5;
-}
-.card-cta {
-	display: inline-block;
-	width: 3.5rem;
-	height: 3.5rem;
-	border-radius: 50%;
-	display: grid;
-	place-items: center;
-	margin-left: auto;
-}
-/* .card.twitter{
-  place-self: center;
-}
-.card.instagram{
-  place-self: center;
-} */
-.card:hover .card-cta {
-	background-color: #262525;
-}
-.card:hover .card-title-large {
-	transform: translateX(-7%);
-	color: #fff;
-}
-.card.Technical:hover {
-	background-color: #1da0f2c7;
-}
-.card.Tools:hover {
-	/* background: radial-gradient(
-		at 20% 128%,
-		#feda78 20%,
-		#e23467 60%,
-		#ac2bb3 90%
-	); */
 
-  background-color: #f22929c0;
+.img-container {
+    height: 300px;
+    width: 200px;
+    /* overflow: hidden; */
+    /* border-radius: 0px 0px 20px 20px; */
+    display: inline-block;
+}
+.img-container img {
+  transform: skew(0deg, -13deg);
+  height: 200px;
+  margin: 20px 0px 0px -50px;
+}
+.img-container2 {
+  height: 300px;
+  width: 200px;
+  /* overflow: hidden; */
+  /* border-radius: 0px 0px 20px 20px; */
+  display: inline-block;
+}
+.img-container2 img {
+  transform: skew(0deg, -13deg);
+  height: 250px;
+  margin: 15px 0px 0px -50px;
 }
 
 
 
+.inner-skew {
+    display: inline-block;
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 0px;
+    transform: skew(0deg, 13deg);
+    font-size: 0px;
+    margin: 30px 0px 0px 0px;
+    background: #ff030300;
+    height: 300px;
+    width: 300px;
+    /* From https://css.glass */
+/* background: rgba(247, 31, 31, 0);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(225, 0, 0, 0.1);
+backdrop-filter: blur(1.1px);
+-webkit-backdrop-filter: blur(1.1px); */
+}
 
+.text-container {
+  font-family: 'Chakra Petch', sans-serif;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2);
+  padding: 120px 20px 20px 20px;
+  border-radius: 20px;
+  background: #fff;
+  margin: -120px 0px 0px 0px;
+  line-height: 19px;
+  font-size: 14px;
+}
 
+.text-container h3 {
+  margin: 10px 0px 10px 0px;
+  color: #04bcff;
+  font-size: 18px;
+}
 
 
 
